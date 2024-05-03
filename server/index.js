@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.connect(
-  "mongodb+srv://myAtlasDBUser:135790@myatlasclusteredu.ufhaxua.mongodb.net/usersDatabase?retryWrites=true&w=majority&appName=myAtlasClusterEDU"
+  "mongodb+srv://myAtlasDBUser:password@atlascluster.ufhaxua.mongodb.net/usersDatabase?retryWrites=true&w=majority&appName=atlascluster"
 );
 
 app.post("/signin", async (req, res) => {
